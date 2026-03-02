@@ -1,0 +1,19 @@
+[package]
+name = "unwrap"
+version = "1.0.0"
+edition = "2021"
+description = "Cross-platform CLI tool to unwrap Oracle PL/SQL 10g+ wrapped code"
+license = "MIT"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+base64 = "0.22"
+flate2 = "1"
+regex = "1"
+walkdir = "2"
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = true
+panic = "abort"
