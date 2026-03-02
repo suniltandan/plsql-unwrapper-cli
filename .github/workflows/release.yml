@@ -26,11 +26,11 @@ jobs:
             extension: ""
             use_cross: true
           - target: x86_64-apple-darwin
-            os: macos-13
+            os: macos-latest
             artifact_name: unwrap-macos-x86_64
             extension: ""
           - target: aarch64-apple-darwin
-            os: macos-14
+            os: macos-latest
             artifact_name: unwrap-macos-aarch64
             extension: ""
           - target: x86_64-pc-windows-msvc
